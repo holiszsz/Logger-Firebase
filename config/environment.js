@@ -2,6 +2,19 @@
 
 module.exports = function(environment) {
   let ENV = {
+    firebase: {
+      apiKey: "AIzaSyA6GctMPZDGf8tljLWdqJQ_YIifhHZOQMs",
+      authDomain: "logger-e7265.firebaseapp.com",
+      databaseURL: "https://logger-e7265.firebaseio.com",
+      projectId: "logger-e7265",
+      storageBucket: "logger-e7265.appspot.com",
+      messagingSenderId: "190573604426",
+      appId: "1:190573604426:web:63d8e8689cdfeea01f40b3",
+      measurementId: "G-H5QRD1MNSX"
+    },
+    torii: {
+      sessionServiceName: 'session'
+    },
     modulePrefix: 'logger',
     environment,
     rootURL: '/',

@@ -20,6 +20,36 @@
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/logger.js"></script>
 
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+
+
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyA6GctMPZDGf8tljLWdqJQ_YIifhHZOQMs",
+        authDomain: "logger-e7265.firebaseapp.com",
+        databaseURL: "https://logger-e7265.firebaseio.com",
+        projectId: "logger-e7265",
+        storageBucket: "logger-e7265.appspot.com",
+        messagingSenderId: "190573604426",
+        appId: "1:190573604426:web:63d8e8689cdfeea01f40b3",
+        measurementId: "G-H5QRD1MNSX"
+      };
+  
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
     {{content-for "body-footer"}}
   </body>
 </html>
