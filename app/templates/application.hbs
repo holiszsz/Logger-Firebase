@@ -2,6 +2,10 @@
 {{!-- <WelcomePage /> --}}
 {{!-- Feel free to remove this! --}}
 
+<div>
+    <h1>Logger</h1>
+</div>
+
 {{#if session.isAuthenticated}}
   Logged in as {{ session.data.authenticated.user.displayName }}
   <button {{action "logout"}}>Sign out</button>
