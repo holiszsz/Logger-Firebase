@@ -1,8 +1,6 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-    sortProperties: ['timestamp'],
-    sortAscending: true, // sorts post by timestamp
     actions: {
       publishPost: function() {
         var newPost = this.store.createRecord('post', {

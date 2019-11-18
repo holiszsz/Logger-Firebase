@@ -29,7 +29,7 @@
     <td>{{post.title}}</td>
     <td>{{post.category}}</td>  
     <td>{{post.amount}}</td>  
-    <td>{{post.createdAt}}</td>
+    <td>{{format-time post.timestamp}}</td>
     </tr>
     {{/each}}
   </tbody>
