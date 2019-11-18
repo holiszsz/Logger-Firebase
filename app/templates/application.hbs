@@ -3,7 +3,7 @@
 {{!-- Feel free to remove this! --}}
 
 <div>
-    <h1>Logger</h1>
+  <h1>Logger</h1>
 </div>
 
 {{#if session.isAuthenticated}}
@@ -12,6 +12,5 @@
   {{outlet}}
 {{else}}
   <button {{action "login"}}>Sign in with Google</button>
+  {{outlet}}
 {{/if}}
-
-{{outlet}}

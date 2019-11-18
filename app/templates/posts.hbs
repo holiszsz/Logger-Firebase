@@ -1,0 +1,27 @@
+<h2>New Log</h2>
+<ul class="post-publish">
+  <li>
+    {{input value=title placeholder="Title"}}
+  </li>
+  <li>
+    {{input value=category placeholder="Category"}}
+  </li>
+  <li>
+    {{input value=amount placeholder="Amount"}}
+  </li>
+  <li>
+    <button {{action "publishPost"}}>Log it!</button>
+  </li>
+</ul>
+
+<section>
+{{#each model as |post|}}
+  <div>{{post.title}}</div>
+  <div>{{post.category}}</div>  
+  <div>{{post.amount}}</div>  
+  <div>{{post.createdAt}}</div>
+  <div>=====</div>  
+{{/each}}
+</section>
+
+{{outlet}}
