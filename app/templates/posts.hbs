@@ -14,14 +14,25 @@
   </li>
 </ul>
 
-<section>
-{{#each model as |post|}}
-  <div>{{post.title}}</div>
-  <div>{{post.category}}</div>  
-  <div>{{post.amount}}</div>  
-  <div>{{post.createdAt}}</div>
-  <div>=====</div>  
-{{/each}}
-</section>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Category</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |post|}}
+    <tr>
+    <td>{{post.title}}</td>
+    <td>{{post.category}}</td>  
+    <td>{{post.amount}}</td>  
+    <td>{{post.createdAt}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
 
 {{outlet}}
